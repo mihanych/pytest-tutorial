@@ -14,7 +14,7 @@ def fixture_small_group():
         adventurers.new_frog("Bruno"),
         adventurers.new_lion("Michael"),
         adventurers.new_koala("Brianna"),
-        adventurers.new_tiger("Julia"),
+        # adventurers.new_tiger("Julia"),
     ]
 
 
@@ -43,7 +43,7 @@ def fixture_no_pandas_group():
         adventurers.new_fox("Dave"),
         adventurers.new_lion("Michael"),
         adventurers.new_koala("Brianna"),
-        adventurers.new_tiger("Julia"),
+        # adventurers.new_tiger("Julia"),
         adventurers.new_fox("Raphael"),
         adventurers.new_fox("Caro"),
         adventurers.new_bear("Chris"),
