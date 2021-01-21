@@ -27,7 +27,7 @@ class Event:
 
     def start(self):
         print(f"Welcome to {self.name} in {self.location}! 🎉")
-        print(f"Let's start with introductions...💬")
+        print("Let's start with introductions...💬")
 
         for attendee in self.attendees:
             if attendee.location != self.location:
