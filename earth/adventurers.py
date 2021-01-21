@@ -28,10 +28,12 @@ class Adventurer:
     def __str__(self):
         return f"{self.profile} {self.name}"
 
+    # pylint: disable=R0201
     @_getting_ready.default
     def default_activities(self):
         return [pack]
 
+    # pylint: disable=R0201
     @_availability.default
     def default_availability(self):
         return list(Months)
@@ -73,7 +75,7 @@ class Adventurer:
 
 def new_panda(name, **kwargs):
     def eat(panda):
-        for i in range(4):
+        for _ in range(4):
             print(f"{panda.profile} {panda.name} is eating... 🌱")
             time.sleep(5)
 
