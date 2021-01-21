@@ -1,0 +1,11 @@
+name: devops
+channels:
+  - conda-forge
+dependencies:
+  - attr
+  - pytest
+  - pytest-cov
+  - flake8
+  - pylint
+  - bandit
+
