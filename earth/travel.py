@@ -39,12 +39,10 @@ def fly(from_location, to_location):
     to_airport = closest_airport(to_location)
 
     # Well, we all know how it works at Tegel
-    if from_airport == Airports.TXL:
-        if random.random() < 0.5:
-            raise AirportProblem(f"Problems at {from_airport.value} 🚧")
+    if from_airport == Airports.TXL and random.random() < 0.5:
+        raise AirportProblem(f"Problems at {from_airport.value} 🚧")
 
-    if to_airport == Airports.TXL:
-        if random.random() < 0.5:
-            raise AirportProblem(f"Problems at {to_airport.value} 🚧")
+    if to_airport == Airports.TXL and random.random() < 0.5:
+        raise AirportProblem(f"Problems at {to_airport.value} 🚧")
 
     return to_airport.value.location
